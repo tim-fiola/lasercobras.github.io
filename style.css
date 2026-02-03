@@ -1,0 +1,59 @@
+/* Reset and Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #050505; /* Deep black to match logo background */
+    color: #ffffff;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Container for all content */
+.container {
+    text-align: center;
+}
+
+/* The Logo - Adding a subtle red glow behind it */
+.logo {
+    max-width: 400px;
+    filter: drop-shadow(0 0 20px rgba(255, 0, 0, 0.4));
+    animation: pulse 4s infinite ease-in-out;
+}
+
+/* Neon Red Title */
+h1 {
+    font-size: 4rem;
+    margin-top: 20px;
+    margin-bottom: 0;
+    letter-spacing: 12px;
+    color: #ff003c;
+    text-shadow: 0 0 10px #ff003c, 0 0 30px #ff003c;
+    font-weight: 900;
+}
+
+/* Glowing Decorative Line */
+.glow-line {
+    height: 2px;
+    width: 100px;
+    background: #ff003c;
+    margin: 10px auto;
+    box-shadow: 0 0 15px #ff003c;
+}
+
+/* Subtitle */
+p {
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    color: #888;
+    text-transform: uppercase;
+}
+
+/* Animation to make the cobras "breathe" */
+@keyframes pulse {
+    0%, 100% { transform: scale(1); filter: drop-shadow(0 0 20px rgba(255, 0, 0, 0.4)); }
+    50% { transform: scale(1.03); filter: drop-shadow(0 0 40px rgba(255, 0, 0, 0.7)); }
+}
