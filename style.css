@@ -188,6 +188,32 @@ footer {
     color: #444;
 }
 
+/* Cobraverse Cross-Promo */
+.cobraverse-plug {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cobraverse-plug p {
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    letter-spacing: 3px;
+    color: #ccc;
+    text-transform: uppercase;
+}
+
+.cobraverse-plug a {
+    color: #ffff00;
+    text-decoration: none;
+    font-weight: 800;
+    text-shadow: 0 0 10px #ffff00, 0 0 20px #b8b800;
+    transition: all 0.3s ease;
+}
+
+.cobraverse-plug a:hover {
+    color: #fff;
+    text-shadow: 0 0 15px #ffff00, 0 0 30px #ffff00;
+}
+
 .footer-links {
     margin-top: 15px;
 }
@@ -196,6 +222,7 @@ footer {
     color: #888;
     text-decoration: none;
     letter-spacing: 2px;
+    margin: 0 12px;
     transition: all 0.3s ease;
 }
 
